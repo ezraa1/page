@@ -1,21 +1,18 @@
-import React from "react";
+import NavLinks from "./components/NavLinks";
+import Header from "./components/Headers";
 import AnimatedRoutes from "./components/AnimatedRoutes";
+import Landing from "./pages/landing/Landing";
 
 function App() {
-  const personalDetails = {
-    name: "Ezra Kipchirchir",
-    location: "Nairobi, Kenya",
-    tagline: "I'm a Developer",
-    email: "ezrakipchirchir1034@gmail.com",
-    availability: "Open for work",
-    brand:
-      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
-  };
+
 
   return (
     <>
+    
+      <Header />
       
-      <AnimatedRoutes personalDetails={personalDetails} />
+      <NavLinks />
+      {/* <AnimatedRoutes personalDetails={personalDetails} /> */}
     </>
   );
 }
